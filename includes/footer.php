@@ -1,23 +1,16 @@
 <footer>
     <div class="service__container">
-        <?php foreach ($service['icon'] as $item): ?>
+        <?php foreach ($service['service'] as $source_code): ?>
             <div class="service">
                 <div class="service__icon">
-                    <img src="<?= $item['src']; ?>" alt="<?= $item['alt']; ?>">
+                    <svg width="24" height="24">
+                        <use href="<?= $source_code['icon']; ?>" />
+                    </svg>
                 </div>
-                <p><span><?= $item['span']; ?></span><?= $item['text']; ?></p>
+                <a href="<?= $source_code['link']; ?>" target="_blank" rel="noopener noreferrer"
+                    aria-label="<?= $source_code['label']; ?>"><?= $source_code['text']; ?></a>
             </div>
         <?php endforeach; ?>
-
-        <div class="service">
-            <div class="service__icon">
-                <svg width="24" height="24">
-                    <use href="<?= $service['source']['icon']; ?>" />
-                </svg>
-            </div>
-            <a href="<?= $service['source']['link']; ?>" target="_blank" rel="noopener noreferrer"
-                aria-label="<?= $service['source']['label']; ?>"><?= $service['source']['text']; ?></a>
-        </div>
     </div>
 </footer>
 </body>

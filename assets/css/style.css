@@ -170,23 +170,6 @@ nav img {
     text-align: center;
 }
 
-
-.service__icon img {
-    width: 30px;
-}
-
-.service p span {
-    margin-bottom: 5px;
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 800;
-
-}
-
-.service p {
-    font-size: 1.2rem;
-}
-
 .service a {
     text-decoration: none;
     color: #000000;
