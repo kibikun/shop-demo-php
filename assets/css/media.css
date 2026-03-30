@@ -1,0 +1,151 @@
+@media (min-width:31.25rem)
+/* 500px / 16 = 31.25 */
+    {
+    .service__container {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width:37.5rem)
+/* 600px / 16 = 37.5 */
+    {
+    nav {
+        padding: 1.5rem;
+    }
+
+    .search__container {
+        min-width: 250px;
+    }
+
+    input[type="search"] {
+        width: 100%;
+    }
+
+    .item__container {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+}
+
+@media (min-width:48rem)
+/* 768px / 16 = 48 */
+    {
+    .search__container {
+        margin-right: 10px;
+        width: 100%;
+        border-radius: unset;
+        padding: 0.5rem;
+    }
+
+    input[type="search"] {
+        border-radius: unset;
+    }
+
+    .item__container {
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .search__container:focus-within {
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .service {
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:62.5rem)
+/* 1000px  / 16 = 62.5 */
+    {
+
+    .container {
+        display: flex;
+    }
+
+    .list {
+        position: sticky;
+        top: 60px;
+        align-self: flex-start;
+        width: 40%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footwear,
+    .brand {
+        margin: 2rem 0;
+        padding: 1rem;
+        background-color: #f6f6f6;
+    }
+
+    .list__title {
+        margin: 1rem 0;
+    }
+
+    .gen {
+        padding: 0.5rem;
+        display: flex;
+        align-content: center;
+        gap: 5px;
+    }
+
+    .gen label {
+        font-size: 1.2rem;
+    }
+
+    .item__container {
+        gap: 20px;
+    }
+
+    .card {
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card:active {
+        transform: scale(1);
+    }
+
+    .service__container {
+        gap: 10rem;
+    }
+}
+
+@media (min-width:75rem)
+/* 1200px / 16 =  */
+    {
+    .list {
+        width: 20%;
+    }
+
+    .item__container {
+        grid-template-columns: repeat(5, 1fr)
+    }
+
+    .service__container {
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .service {
+        min-width: 200px;
+    }
+}
+
+@media (min-width:87.5rem)
+/* 1400px / 16  = 87.5*/
+    {
+
+    .item__container {
+        grid-template-columns: repeat(6, 1fr)
+    }
+
+}
