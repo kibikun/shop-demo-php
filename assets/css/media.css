@@ -17,8 +17,10 @@
         grid-template-columns: repeat(3, 1fr)
     }
 
-    .service {
-        flex-direction: row;
+    .service a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
 

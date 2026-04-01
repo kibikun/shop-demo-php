@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class CardObject
+class Card
 {
 
     private array $card;

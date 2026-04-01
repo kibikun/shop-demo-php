@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class MainNavObject
+class MainNav
 {
     private array $nav_data;
 

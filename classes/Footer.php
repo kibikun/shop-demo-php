@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class FooterObject
+class Footer
 {
     private array $service;
 

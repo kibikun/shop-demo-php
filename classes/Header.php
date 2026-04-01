@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-class HeaderObject
+class Header
 {
     private array $data;
     public function __construct(string $data)

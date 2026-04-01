@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class SideBarObject
+class SideBar
 {
 
     private array $side_bar;
